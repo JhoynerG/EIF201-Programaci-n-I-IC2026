@@ -1,6 +1,6 @@
 #include "Funciones.h"
 
-int sumaArray(const array<int, 10> arregloNum)
+int sumaArray(const std::array<int, 10> arregloNum)
 {
     int suma = 0;
     for (size_t i = 0; i < arregloNum.size(); i++) {
@@ -9,7 +9,7 @@ int sumaArray(const array<int, 10> arregloNum)
     return suma;
 }
 
-double promedioAritmetico(const array<int, 10> arregloNum)
+double promedioAritmetico(const std::array<int, 10> arregloNum)
 {
     double promedio = 0;
         double suma = 0;
@@ -18,7 +18,7 @@ double promedioAritmetico(const array<int, 10> arregloNum)
         return promedio;
 }
 
-int numMayor(const array<int, 10> arregloNum)
+int numMayor(const std::array<int, 10> arregloNum)
 {
     int mayor = arregloNum[0];
 
@@ -30,7 +30,7 @@ int numMayor(const array<int, 10> arregloNum)
     return mayor;
 }
 
-int numMenor(const array<int, 10> arregloNum)
+int numMenor(const std::array<int, 10> arregloNum)
 {
     int menor = arregloNum[0];
 

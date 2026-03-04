@@ -4,19 +4,18 @@
 #include <iostream>
 #include <array>
 #include "Funciones.h"
-using namespace std;
 
 int main()
 {
-    array<int, 10> arregloNum;
+    std::array<int, 10> arregloNum;
     for (size_t i = 0; i < arregloNum.size(); i++) {
-        cout << "Ingrese un numero entero: " << endl;
-        cin >> arregloNum[i];
+        std::cout << "Ingrese un numero entero: " << std::endl;
+        std::cin >> arregloNum[i];
     }
-    cout << "El mayor es: " << numMayor(arregloNum) << endl;
-    cout << "El menor es: " << numMenor(arregloNum) << endl;
-    cout << "La suma es: " << sumaArray(arregloNum) << endl;
-    cout << "El promedio es: " << promedioAritmetico(arregloNum) << endl;
+    std::cout << "El mayor es: " << numMayor(arregloNum) << std::endl;
+    std::cout << "El menor es: " << numMenor(arregloNum) << std::endl;
+    std::cout << "La suma es: " << sumaArray(arregloNum) << std::endl;
+    std::cout << "El promedio es: " << promedioAritmetico(arregloNum) << std::endl;
     
 }
 
